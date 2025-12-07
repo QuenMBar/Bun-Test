@@ -1,6 +1,6 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import { describe, it, expect, mock } from "bun:test";
 import "@testing-library/jest-dom";
+import { fireEvent, render, screen } from "@testing-library/react";
+import { describe, expect, it, mock } from "bun:test";
 import DataRow from "./DataRow";
 
 const row = {

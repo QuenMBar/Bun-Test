@@ -1,7 +1,7 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import { describe, it, expect } from "bun:test";
-import "@testing-library/jest-dom";
 import { DataProvider } from "@/context/DataContext";
+import "@testing-library/jest-dom";
+import { fireEvent, render, screen } from "@testing-library/react";
+import { describe, expect, it } from "bun:test";
 import DataTable from "./DataTable";
 
 describe("DataTable with DataProvider", () => {

@@ -1,6 +1,6 @@
-import { describe, it, expect } from "bun:test";
+import { describe, expect, it } from "bun:test";
 import * as React from "react";
-import { Card, CardHeader, CardTitle, CardContent } from "./Card";
+import { Card, CardContent, CardHeader, CardTitle } from "./Card";
 
 describe("Card component (shallow)", () => {
     it("returns a div element with expected data-slot and classes", () => {

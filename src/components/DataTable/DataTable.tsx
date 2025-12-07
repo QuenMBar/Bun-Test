@@ -2,7 +2,7 @@ import { useData } from "@/context/DataContext";
 import DataRow from "../DataRow/DataRow";
 
 export default function DataTable() {
-    const { rows, expandedId, toggleExpand } = useData();
+    const { rows, toggleExpand } = useData();
 
     return (
         <div className="overflow-x-auto">
@@ -28,7 +28,7 @@ export default function DataTable() {
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                     {rows.map((row) => (
-                        <DataRow key={row.id} row={row} isExpanded={expandedId === row.id} onToggle={toggleExpand} />
+                        <DataRow key={row.id} row={row} isExpanded={!!row.expanded} onToggle={toggleExpand} />
                     ))}
                 </tbody>
             </table>

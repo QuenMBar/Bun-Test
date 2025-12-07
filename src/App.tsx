@@ -1,8 +1,8 @@
-import "./index.css";
-import { DataProvider } from "./context/DataContext";
-import Header from "./components/Header/Header";
-import DataTable from "./components/DataTable/DataTable";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/Card/card";
+import DataTable from "./components/DataTable/DataTable";
+import Header from "./components/Header/Header";
+import { DataProvider } from "./context/DataContext";
+import "./index.css";
 
 export function App() {
     return (
